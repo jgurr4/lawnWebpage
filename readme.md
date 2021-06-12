@@ -1,0 +1,3 @@
+This project was made using Node.js + Mariadb Connector. The purpose was to develop skill in building web apps that look professional which are also fully functioning with database integration. This app is currently running on my hosting server, and to view what the actual project looks like you can access it by going to this link : http://lawnarizonablog.com
+
+Mainly I wanted to develop this webpage as a way to improve my skill with Database Integration into web apps. My goal is to keep getting better at Database Integration and various database connectors like Mariadb but also with no-sql database technologies like Couchbase and MongoDB in the hopes of one day becoming a professional Backend Web Developer with one of those technologies.

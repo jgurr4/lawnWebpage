@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <title>Mesa Lawn Care</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="keywords" content="lawn, maintenance, care, yard, 
+	mowing, grass, edging, trimming, labor, reliable, cheap, affordable">
+	<meta name="author" content="Jared Gurr">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1">
+ </head>
+<body>	
+ <div class="tancolor">
+ <header>
+  <dl>
+   <dt>Mesa Lawn Care</dt>
+    <dd>Reliable and Affordable</dd>
+  </dl>
+  <nav>
+   <div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="contact.html">Contact</a>
+		<a href="services.html">Services</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="quote.html">Quote</a>
+   </div>
+  </nav>
+ </header>
+ <main>
+ <h1>Welcome!</h1>
+  	<article>
+	 <section>
+		<img class="a" src="images/park3.jpg" alt="palm trees" >
+			 <h3 class="c">What is our goal?</h3>
+			 <p class="a">We know that you're busy. Sometimes the lawn gets 
+			 ignored but you really want to have a place that looks
+			 neat and tidy. What if you just have no time? That's 
+			 where we come in!</p>
+			 <img class="b" src="images/greengrass2.jpg" alt="green grass" >
+	 </section>
+	 <br></br>
+	 <section>
+			 <h3 class="d">How much does it cost?</h3>
+			 <p class="b">Our philosophy is that we are getting to do 
+			 something that we love, and you can't really put a 
+			 price on that. But doing a service like this does 
+			 cost us to operate. In the end though, you can expect
+			 very competitive prices, and very fair contracts
+			 for whatever you need us to do.</p>
+			 <img class="a" src="images/cactus2.jpg" alt="flourishing cactus" >
+	 </section>
+	 <section>
+			 <h3 class="c">How do I know what options to opt-in for?</h3>
+			 <p class="c">It's a daunting task to know exactly what your 
+			 specific yard needs. But, have no fear! We are experienced
+			 professionals with deep understanding of what it takes to make your lawn green.
+			 If you have a question about what reccomendations we 
+			 have for your yard, just send a message to us and 
+			 we'll be sure to reply in a timely manner.</p>
+			 <img id="img4" class="b" src="images/beautiful.jpg" alt="beautiful grass landscape">
+	 </section>
+	 <section>
+			 <h3 class="d">How to have a perfect yard?</h3>
+			 <p class="d">We believe the science behind having a perfect lawn
+			 is custom care and maintenance. Your lawn is not the 
+			 same as other people's. You may have specific features
+			 that makes your lawn unique. We'll make sure that 
+			 whatever your needs are, in the end, the result will
+			 be a healthy green lawn.</p>
+			 <img class="a" src="images/lawnmower.jpg" alt="lawnmower mowing" >
+	 </section>
+	 <section>
+			 <h3 class="c">What options are there?</h3>
+			 <p class="e">Head on over to our services page to see what we
+			 offer. There are detailed sections about each service
+			 and their general price based on a reasonable 450 Sq.
+			 Ft. size yard or smaller.</p>
+	 </section>
+  </article>
+	
+	<aside>
+  </aside>
+
+ </main>
+ </div>
+
+ 
+ <footer>
+		 <h3 class="text">Gallery</h3>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/lawn.JPG" alt="Green Lawn"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/mowing.jpg" alt="man mowing lawn"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/park2.jpg" alt="park"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/park5.jpg" alt="park with lake"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/park3.jpg" alt="palm trees"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/cactus.jpg" alt="tall cactus"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/park.jpg" alt="grassy park with pond"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/after.jpg" alt="freshly cut lawn"
+                             width="100" height="150">
+		 </div>
+		 <div id="myModal" class="modal">
+		   <span class="close">&times;</span>
+		   <img class="modal-content" id="img01">
+		 </div>
+		 <div class="copy">
+		 Copyright &copy; 2019 Jared Gurr
+		 </div>
+ </footer>
+ <script>
+   let modal = document.getElementById("myModal");
+   let images = document.getElementsByClassName("gallery");
+   let modalImg = document.getElementById("img01");
+   
+   for(const image of images) {
+	 image.onclick = function(){
+	 modal.style.display = "block";
+	 modalImg.src = this.src;
+	 }
+  };
+   let span = document.getElementsByClassName("close")[0];
+   span.onclick = function(){
+	 modal.style.display = "none";
+   }
+ </script>
+</body>
+</html>
+

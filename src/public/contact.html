@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <title>Contact - Mesa Lawn Care</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1">
+ </head>
+<body>	
+ <div class="tancolor">
+ <header>
+  <dl>
+   <dt>Mesa Lawn Care</dt>
+    <dd>Reliable and Affordable</dd>
+  </dl>
+  <nav>
+   <div class="topnav">
+		<a href="index.html">Home</a>
+		<a class="active" href="contact.html">Contact</a>
+		<a href="services.html">Services</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="quote.html">Quote</a>
+   </div>
+  </nav>
+ </header>
+ <main>
+ <h1>Contact info</h1>
+  	<article>
+	 		<section class="contact">
+			<p class="contact">Manager: Jared Gurr</p>	
+			<p class="contact">Phone Number: (480)-770-0212</p>
+			<p class="contact">E-mail: jglawn54@gmail.com</p>
+	 		</section>
+			<div class="map">
+			<iframe src="https://www.google.com/maps/d/embed?mid=1m46F6eeUn5ksatDTNXj6v9uHoFulUIjU" width="380px" height="380"></iframe>
+			</div>
+			<section class="hours">
+					<h3 class="contact">Business Hours:</h3>
+					<p class="contact">Sunday: None</p>
+					<p class="contact">Monday: 7:00AM-6:00PM</p>
+					<p class="contact">Tuesday: 7:00AM-6:00PM</p>
+					<p class="contact">Wednesday: 7:00AM-6:00PM</p>
+					<p class="contact">Thursday: 7:00AM-6:00PM</p>
+					<p class="contact">Friday: 7:00AM-6:00PM</p>
+					<p class="contact">Saturday: None</p>
+			</section>
+	  </article>
+	
+	<aside>
+  </aside>
+
+ </main>
+ </div>
+
+ <footer>
+		 <h3 class="text">Gallery</h3>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/lawn.JPG" alt="Green Lawn"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/mowing.jpg" alt="man mowing lawn"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/park2.jpg" alt="park"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/park5.jpg" alt="park with lake"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/park3.jpg" alt="palm trees"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/cactus.jpg" alt="tall cactus"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/park.jpg" alt="grassy park with pond"
+                             width="100" height="150">
+		 </div>
+		 <div>
+				 		<img id="myImg" class="gallery" src="images/after.jpg" alt="freshly cut lawn"
+                             width="100" height="150">
+		 </div>
+		 <div id="myModal" class="modal">
+		   <span class="close">&times;</span>
+		   <img class="modal-content" id="img01">
+		 </div>
+		 <div class="copy">
+		 Copyright &copy; 2019 Jared Gurr
+		 </div>
+ </footer>
+ <script>
+   let modal = document.getElementById("myModal");
+   let images = document.getElementsByClassName("gallery");
+   let modalImg = document.getElementById("img01");
+   
+   for(const image of images) {
+	 image.onclick = function(){
+	 modal.style.display = "block";
+	 modalImg.src = this.src;
+	 }
+  };
+   let span = document.getElementsByClassName("close")[0];
+   span.onclick = function(){
+	 modal.style.display = "none";
+   }
+  
+  //function mapDimensions() {
+  //  let containerWidth = document.getElementsByClassName("tancolor")[0].getAttribute("width");
+  //  let mapWidth = document.getElementsByTagName("iframe");
+
+  //  if(containerWidth <= "500px") {
+  //    mapWidth.style.width = "380px";
+  //  } else {
+  //    mapWidth.style.width = "430px";
+  //  }
+  //}
+ </script>
+</body>
+</html>
+
+
+<!--first, make my contact info look nice, then add map of service
+		and finally end with business hours at bottom.-->
+

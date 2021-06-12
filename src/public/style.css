@@ -1,0 +1,321 @@
+@media only screen and (min-width: 1200px) {
+  * { 
+    font-size: 25px;	
+  }
+  img {
+	width: 400px; 
+  }
+  .tancolor {
+    width: 1200px;
+  }
+  footer {
+    width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  img {
+	width: 200px;
+  }
+  #img4 {
+	height: 150px;
+  }
+  .tancolor {
+    width: 800px;
+  }
+  footer {
+	width: 800px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .tancolor {
+	width: 400px;
+  }
+  footer {
+	width: 400px;
+  }
+}
+
+html {
+  height: 100%;
+  background-image: url("public/images/park1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tancolor {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 4vw, 1vw, 1vw, 1vw;
+  padding: 0px 0px 6vw 0px;
+  height: 100%;
+  background: linear-gradient(45deg, tan, rgba(210, 180, 140, .6)),
+  repeating-linear-gradient(45deg, tan 0%, tan 0%, rgba(210, 180, 140, 0)
+  10%, rgba(210, 180, 140, 0) 10%);
+}
+
+img.a {
+  float: left;
+  padding: 0px 10px 0px 10px; 
+}
+
+img.b {
+  float: right;
+  padding: 0px 10px 0px 10px;
+}
+
+main {
+  padding: 0px 10px 0px 10px; 
+}
+
+article.services {
+  -webkit-columns: 200px 2;
+  -moz-columns: 200px 2;
+  columns: 200px 2;
+}
+
+main.quote {
+  padding: 0px 10px 20px 10px;
+}
+
+h1 {
+  padding: 15px 0px 10px 0px;
+  margin: 0px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+form {
+  text-align: center;
+}
+
+h3 {
+  padding-top: 10px;	
+  margin-bottom: -10px;
+  font-size: 1.25rem;
+}
+
+h3.contact {
+  margin: 0;
+  text-align: center;
+}
+
+h3.services {
+  margin: 0;
+}
+
+h3.a {
+  padding-left: 10px;
+}
+
+h3.b {
+  padding-left: 10px;
+}
+
+h3.c {
+  padding-left: 10px;
+}
+
+h3.d {
+  padding-left: 10px;
+}
+
+h3.e {
+  padding-left: 10px;
+}
+
+p {
+  font-size: 1.25rem;
+  font-family: 'prata';
+  padding: 0px 10px 10px 10px;
+}
+
+p.contact {
+  font-family: arial;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+h3.text {
+  padding-top: 5px;
+  margin: 5px;
+}
+
+#p1 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 15px 0px 15px 0px;
+}
+
+#p2 {
+  text-align: left;
+  font-size: 1rem;
+  margin: 0px 0px 0px 0px;
+  padding: 15px 0px 15px 0px;
+}
+
+dl {
+  color: #000; <!--alt #ffffb3-->
+  font-family: 'prata';
+  background-color: #008000;
+  max-width: 250rem;
+  padding: 3px 5px 5px 5px;
+  margin-right: auto;
+  text-shadow: 1px 1px 1px;
+  box-shadow: inset 2px 2px 3px ,
+			  inset -2px -2px 3px;
+}
+
+dt {
+  font-size: 1.5rem;
+}
+
+dd {
+  font-size: 1rem;
+}
+
+section.hours {
+  padding-top: 20;
+}
+
+div.map {
+  padding: 5px 0px 20px 0px;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  iframe {
+	width: 100%;
+	height: 380px;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  font-family: arial;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; <!-- alt 'bold' (gives underline)-->
+  font-size: 1rem;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #008000;
+  color: white;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto:
+}
+
+#myImg {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+	width: 100%;
+  }
+}
+
+.copy {
+  clear: both;
+  color: white;
+  text-align: right;
+}
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem:
+  text-color: tan;
+  text-shadow: 1px 1px 1px;
+  border-radius: 10px;
+  font-family: helvetica, sans-serif;
+  box-shadow: inset 2px 2px 3px ,
+			  inset -2px -2px 3px;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  text-align: center;
+  color: white;
+}

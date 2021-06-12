@@ -1,0 +1,20 @@
+{
+  "name": "lawnapp",
+  "version": "1.0.0",
+  "description": "lawncare website",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mariadb": "^2.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node mariadbscript.js"
+  },
+  "author": "Jared Gurr",
+  "license": "ISC"
+}

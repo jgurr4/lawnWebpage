@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker rmi jaredsdev/nodejsapp
+docker build -t jaredsdev/nodejsapp /home/jaredgurr/lawnWebpage/src/
+docker push jaredsdev/nodejsapp
+cd /home/jaredgurr/crawl-training-extra/
+printf "Now you will be sent to remote server to finish deploying updates.\n Just perform these few commands: \n cd lawnWebpage/ \n docker-compose down \n docker rmi jaredsdev/nodejsapp \n docker-compose up -d"
+sleep 25s
+ssh -i ./ocean rancher@138.68.238.246

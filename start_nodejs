@@ -1,0 +1,1 @@
+docker run --name nodeapp -v /home/jaredgurr/Master/dockertemplates/mariadb/src:/home/node/app -d node
