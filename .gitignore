@@ -1,4 +1,4 @@
 **/node_modules
 **/mysqldata
 **/mysql-data
-
+**/config.js

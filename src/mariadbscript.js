@@ -4,12 +4,13 @@ const app = express();
 const bodyParser = require('body-parser');
 const port = 80
 const mariadb = require('mariadb');
+const config = require('./config.js');
 
 const pool = mariadb.createPool({
-    host: "db",  //name of my container from docker-compose.yml line 3.
-    user: "root",
-    password: "super03",
-    database: "customer"
+    host: config.myHost,  //name of my container from docker-compose.yml line 3.
+    user: config.myUser,
+    password: config.pass,
+    database: config.db
 })
 
 app.use(express.static('public'));
