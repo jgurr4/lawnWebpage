@@ -1,4 +1,5 @@
-CREATE DATABASE IF NOT EXISTS customer;
+CREATE DATABASE IF NOT EXISTS lawn;
+USE lawn;
 CREATE TABLE IF NOT EXISTS contact
 (
     name            VARCHAR(40)  NOT NULL,
@@ -10,4 +11,20 @@ CREATE TABLE IF NOT EXISTS contact
     message         TEXT         NOT NULL,
     submission_date DATE DEFAULT CURDATE(),
     PRIMARY KEY (name)
-);
+) ENGINE ARIA;
+
+CREATE DATABASE IF NOT EXISTS portfolio;
+USE portfolio;
+CREATE TABLE IF NOT EXISTS contact
+(
+  name VARCHAR(45), 
+  business VARCHAR(100), 
+  position VARCHAR(100), 
+  callback VARCHAR(100), 
+  phone VARCHAR(18),  
+  interview_date VARCHAR(200)
+) ENGINE ARIA;
+
+CREATE USER 'portfolio'@'%' IDENTIFIED BY 'super03';
+GRANT INSERT ON portfolio.contact TO 'portfolio'@'%';
+FLUSH PRIVILEGES;

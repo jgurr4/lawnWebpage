@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const port = 80
+const port = 8081
 const mariadb = require('mariadb');
 const config = require('./config.js');
 

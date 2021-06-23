@@ -3,7 +3,7 @@ services:
   db:
     image: mariadb/server
     volumes:
-      - ./mysqldata:/var/lib/mysql
+      - /home/jaredgurr/portfolio-extra/mysqldata:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=super03
     networks: 
@@ -13,10 +13,8 @@ services:
   web:
     image: jaredsdev/nodejsapp
     ports: 
-      - "80:80"
+      - "8081:8081"
     depends_on:
       - db
     environment:
       - DATABASE_HOST=db
-    volumes:
-      - ./src:/src/app
