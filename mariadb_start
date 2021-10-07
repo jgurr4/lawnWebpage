@@ -1,1 +1,1 @@
-docker run --rm --net=host -v ~/Master/lawnWebpage/mysqldata:/var/lib/mysql --name mariadb -e MARIADB_ALLOW_EMPTY_PASSWORD=t -it mariadb/server
+docker run --rm --net=host -p 3306:3306 -v ~/portfolio-extra/mysqldata:/var/lib/mysql --name mariadb -e MARIADB_ALLOW_EMPTY_PASSWORD=t -d mariadb/server

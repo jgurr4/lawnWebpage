@@ -25,6 +25,6 @@ CREATE TABLE IF NOT EXISTS contact
   interview_date VARCHAR(200)
 ) ENGINE ARIA;
 
-CREATE USER 'portfolio'@'%' IDENTIFIED BY 'super03';
+CREATE USER 'portfolio'@'%' IDENTIFIED BY 'somepass';
 GRANT INSERT ON portfolio.contact TO 'portfolio'@'%';
 FLUSH PRIVILEGES;
